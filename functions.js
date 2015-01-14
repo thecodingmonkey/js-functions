@@ -178,6 +178,9 @@ function isEven(n) {
  * @param {number} n
  * @return {boolean} the number is odd
  */
+ function isOdd(n) {
+  return (Math.abs(n) % 2) == 1;
+ }
 
 /**
  * Returns a letter grade.
