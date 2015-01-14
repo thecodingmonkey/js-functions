@@ -193,6 +193,22 @@ function isEven(n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+function letterGrade(score, total) {
+  var percent = score / total *100;
+  console.log(percent);
+
+  if (percent >= 90) {
+    return "A"
+  } else if (percent >= 80) {
+    return "B"
+  } else if (percent >= 70) {
+    return "C"
+  } else if (percent >= 60) {
+    return "D"
+  } else {
+    return "F"
+  }
+}
 
 /**
  * Checks if a `restaurant` object has are `views` field.
