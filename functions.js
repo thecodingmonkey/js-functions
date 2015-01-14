@@ -85,6 +85,31 @@ function square (x) {
  * @param {number} y
  * @return {number} the result
  */
+function calculate(operation, x, y) {
+  var opSign, result;
+  switch (operation) {
+    case "add":
+      result = add(x,y);
+      opSign = "+";
+      break;
+    case "subtract":
+      result = subtract(x,y);
+      opSign = "-";
+      break;
+    case "multiply":
+      result = multiply(x,y);
+      opSign = "*";
+      break;
+    case "divide":
+      result = divide(x,y);
+      opSign = "/";
+      break;
+
+  }
+  console.log(x + " " + opSign + " " +  y + ' = ' + result);
+  return result;
+
+}
 
 /**
  * Returns true if `a` is greater than `b`.
