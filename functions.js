@@ -160,6 +160,9 @@ function minimum(a,b) {
  * @param {number} y
  * @return {number} the largest number
  */
+function maximum(a,b) {
+  return (a < b ? b : a);  // same as minimum, but swap return values
+}
 
 /**
  * Returns true if `n` is even.
