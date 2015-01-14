@@ -243,3 +243,12 @@ function combine(word1, word2) {
  * @param {number} radius
  * @return {object} circle
  */
+function createCircle(radius) {
+  var result = new Object();
+
+//  result.radius = radius;
+  result.circumference = 2 * Math.PI * radius;
+  result.area = Math.PI * radius * radius;
+
+  return result;
+}
