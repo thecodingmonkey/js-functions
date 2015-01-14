@@ -23,6 +23,10 @@ function numberToString(n) {
  * @return {number}
  */
 
+function decrease(n) {
+  return --n; // same reasoning as increase
+}
+
 /**
  * Adds two numbers.
  * @param {number} x
