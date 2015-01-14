@@ -12,6 +12,10 @@ function numberToString(n) {
  * @param {number} n
  * @return {number}
  */
+ function increase(n) {
+  return ++n;   // increment, THEN return.
+                // n++ would return original value, most likely.
+ }
 
 /**
  * Subtracts one from a given number.
